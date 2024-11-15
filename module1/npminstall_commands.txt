@@ -1,0 +1,17 @@
+
+
+
+initializng project ---->>>  npm create vite@latest
+
+npx degit user/project#main my-project
+cd my-project
+
+* npm install
+* npm run dev
+
+
+## tailwind commands for install ##
+
+npm install -D tailwindcss postcss autoprefixer  --->>>   Install Tailwind CSS
+
+npx tailwindcss init -p --> run

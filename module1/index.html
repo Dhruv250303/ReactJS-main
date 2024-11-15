@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React1</title>
+  </head>
+  <body>
+    <div id="first">
+      <!-- <h1>Hello Dhruv</h1>
+      <div id="second">
+        <h1>Hello from H1 inner</h1>
+        <h2>Hello from third</h2>
+      </div> -->
+    </div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script>
+      const msg = React.createElement(
+        "div",
+        { id: "parent" },
+        React.createElement(
+            "div",
+             { id: "childs"},
+             [React.createElement("h1", { id:"greet"},"heloo first"),
+             React.createElement("h2", { id:"greet2"},"second")])
+      );
+      const root = ReactDOM.createRoot(document.getElementById("first"));
+
+      root.render(msg);
+    </script>
+  </body>
+</html>
